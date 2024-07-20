@@ -5,7 +5,6 @@ from serial.tools import list_ports
 from bitstring import BitArray
 from datetime import datetime
 import os
-import shutil
 from dotenv import load_dotenv
 
 # change to script directory
