@@ -47,6 +47,12 @@ This Python application is designed for a Raspberry Pi with a TRNG device (TrueR
 >
     sudo chmod +x /home/pi/.config/autostart/rasp_rng.desktop
 
+
+## Real Time Clock (RTC)
+
+I recommend using a RTC to keep files with correct name and not overwriting old ones.
+Check: https://pimylifeup.com/raspberry-pi-rtc/
+
 ## Usage
 
 The scripts will run automatically on startup.

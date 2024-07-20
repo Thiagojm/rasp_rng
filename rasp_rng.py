@@ -130,7 +130,6 @@ def main():
         return
 
     start_time = time.time()
-    print(f"Starting capture...\n")
     num_loop = 1
     total_bytes = 0
     while True:
@@ -139,6 +138,8 @@ def main():
             num_loop = 1
             total_bytes = 0
             filename_base = update_filename( num_bits, interval)
+            print(f"Starting new capture...\n")
+            print(f"Saving data to file {filename_base}...\n")
             start_time = current_time  # reset the start time
         
         rng.flushInput()
