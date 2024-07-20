@@ -132,13 +132,14 @@ def main():
     start_time = time.time()
     num_loop = 1
     total_bytes = 0
+    print(f"\n Starting new capture...\n")
     while True:
         current_time = time.time()
         if current_time - start_time >= sample_duration:
             num_loop = 1
             total_bytes = 0
             filename_base = update_filename( num_bits, interval)
-            print(f"Starting new capture...\n")
+            print(f"\n Starting new capture...\n")
             print(f"Saving data to file {filename_base}...\n")
             start_time = current_time  # reset the start time
         
