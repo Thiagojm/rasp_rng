@@ -1,0 +1,27 @@
+First, create the autostart directory if it doesn't exist.
+
+
+mkdir -p /home/pi/.config/autostart
+
+Create a new .desktop file in the autostart directory. You can use any text editor you like, but in this case, we'll use nano.
+
+nano /home/pi/.config/autostart/myscript.desktop
+
+Paste the following content into the file, replacing /home/pi/myscript.py with the path to your Python script:
+
+plaintext
+
+[Desktop Entry]
+Type=Application
+Name=RngStart
+Exec=/usr/bin/lxterminal -e "python3 /home/pi/myscript.py; bash"
+
+Save the file and exit the editor. If you're using nano, you can do this by pressing Ctrl+X, then Y, then Enter.
+
+Make the .desktop file executable.
+
+bash
+
+chmod +x /home/pi/.config/autostart/myscript.desktop
+
+
